@@ -1,0 +1,40 @@
+// Custom vendor prefix mixins ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin no-highlight( $n: none ) {
+	-webkit-touch-callout: $n; /* iOS Safari */
+	-webkit-user-select: $n; /* Safari */
+	-khtml-user-select: $n; /* Konqueror HTML */
+	-moz-user-select: $n; /* Firefox */
+	-ms-user-select: $n; /* Internet Explorer/Edge */
+	user-select: $n;
+}
+
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transformY($move) {
+	-webkit-transform: translateY($move);
+    -moz-transform: translateY($move);
+    -o-transform: translateY($move);
+    transform: translateY($move);
+}
+
+@mixin dropshadow() {
+	-webkit-box-shadow: 0px 8px 29px 2px rgba(51,51,51,0.08);
+	-moz-box-shadow: 0px 8px 29px 2px rgba(51,51,51,0.08);
+	box-shadow: 0px 8px 29px 2px rgba(51,51,51,0.08);
+}
+
+// Transitions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin rotate ($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform:    rotate($deg);
+	-ms-transform:     rotate($deg);
+	-o-transform:      rotate($deg);
+	transform:         rotate($deg);
+}

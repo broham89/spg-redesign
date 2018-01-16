@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>icon-mail</title>
+  <path class="cls-1" d="M4.33,9H2.91a.76.76,0,0,0-.76.76V23a.76.76,0,0,0,.76.76H22.09a.76.76,0,0,0,.76-.76V9.74A.76.76,0,0,0,22.09,9H20.84"/>
+  <path class="cls-2" d="M20.84,10.72V2.49a1.38,1.38,0,0,0-1.38-1.38H5.71A1.38,1.38,0,0,0,4.33,2.49v8"/>
+  <line class="cls-3" x1="7.28" y1="4.44" x2="17.6" y2="4.44"/>
+  <line class="cls-3" x1="7.28" y1="6.96" x2="17.6" y2="6.96"/>
+  <line class="cls-3" x1="7.28" y1="9.52" x2="13.24" y2="9.52"/>
+  <polyline class="cls-2" points="2.43 9.14 12.5 17.48 22.74 9.36"/>
+</svg>

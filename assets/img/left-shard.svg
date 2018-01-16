@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1335.67 2325.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1279.52" y1="513.49" x2="1512.44" y2="2008.44" gradientTransform="matrix(1, 0, 0, -1, -813.03, 3070.09)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.29" stop-color="#63cbfb"/>
+      <stop offset="0.4" stop-color="#86d7fc" stop-opacity="0.77"/>
+      <stop offset="0.61" stop-color="#c7ecfe" stop-opacity="0.36"/>
+      <stop offset="0.75" stop-color="#effaff" stop-opacity="0.1"/>
+      <stop offset="0.82" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1232.48" y1="-706.59" x2="1465.41" y2="788.35" gradientTransform="matrix(1, 0, 0, -1, -588.26, 658.05)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.19" stop-color="#7ff7f4"/>
+      <stop offset="0.31" stop-color="#9af9f6" stop-opacity="0.79"/>
+      <stop offset="0.54" stop-color="#d0fcfb" stop-opacity="0.37"/>
+      <stop offset="0.7" stop-color="#f2fefe" stop-opacity="0.1"/>
+      <stop offset="0.78" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1325.5" y1="-22.48" x2="1488.94" y2="1026.5" gradientTransform="matrix(-0.6, -0.8, -0.8, 0.6, 2485.08, 2099.37)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#63cbfb"/>
+      <stop offset="0.82" stop-color="#7ff7f4"/>
+    </linearGradient>
+  </defs>
+  <title>left-shard</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" x="225.31" y="1289.19" width="732.46" height="929.73" transform="translate(-465.86 3273.44) rotate(-126.53)"/>
+        <rect class="cls-2" x="398.46" y="126.67" width="732.46" height="929.73" transform="translate(-201.88 571.36) rotate(-36.53)"/>
+        <polygon class="cls-3" points="1183.07 1771.64 1335.67 747.1 747.1 1183.07 1183.07 1771.64"/>
+      </g>
+    </g>
+  </g>
+</svg>

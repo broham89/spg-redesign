@@ -1,0 +1,151 @@
+// All HOME CSS 
+
+#home {
+	@include gradient-1(#6acafc, #7ff7f4);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border: $top solid white; // edit $top in variable/variables
+	position: relative;
+	z-index: 0;
+
+	&:before {
+		content: "";
+		background: url(../img/left-shard.svg) no-repeat bottom right;
+		background-size: 900px auto;
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		opacity: 0.3;
+	}
+
+	&:after {
+		content: "";
+		background: url(../img/right-shard.svg) no-repeat center left;
+		background-size: 1300px auto;
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		opacity: 0.4;
+	}
+
+	.content {
+		max-width: 900px;
+	    width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 800;
+		padding-top: 120px;
+
+	}
+
+	.news-container {
+		width: fit-content;
+	    display: inline-block;
+		white-space: nowrap;
+		background: rgba(255, 255, 255, 0.4);
+		font-size: 14px;
+		border-radius: 6px;
+	    margin: 0 auto 15px auto;
+
+
+		span.news {
+			font-weight: 600;
+			background-color: white;
+			padding: 10px 14px;
+			border-radius: 6px;
+		}
+
+		p.update {
+			font-weight: 300;
+			padding: 0 12px;
+			margin: 0;
+
+		}
+
+	}
+
+	h1 {
+		margin-bottom: 10px;
+		font-weight: 800;
+		font-size: 3.5rem;
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+
+	}
+
+
+	.news-container > *{
+		display: inline-block
+	}
+
+	
+	.main-ilus {
+		position: relative;
+		bottom: 0px;
+		height: auto;
+		max-width: 800px;
+		margin: 0 auto;
+		svg {
+			width: 100%;
+			
+		}
+	}
+
+	.scroll-to-bottom {
+		color: white;
+		font-size: 14px;
+		transform: rotate(90deg);
+		display: inline-block;
+		position: absolute;
+		right: -70px;
+		bottom: 100px;
+		letter-spacing: 0.04rem;
+
+		&:after {
+			content: "\2192 ";
+			margin-left: 5px;
+		}
+
+	}
+
+	@include breakpoint (tablet) {
+
+		.content {
+			width: 100%;
+		}
+		
+		h1 {
+			font-size: 3rem;
+		}
+
+		.main-ilus {
+			width: 120%;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -50px;
+		}
+
+	}
+
+	@include breakpoint (phone) {
+		.news-container span.news {
+		    padding: 6px 10px;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		p.update {
+			font-size: 12px;
+		}
+	}
+
+}

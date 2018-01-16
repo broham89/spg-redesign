@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>icon-blog</title>
+  <path class="cls-1" d="M16.73,6.63V2.37a1.24,1.24,0,0,0-1.24-1.24H2.78A1.24,1.24,0,0,0,1.53,2.37V22.58a1.24,1.24,0,0,0,1.24,1.24H15.49a1.24,1.24,0,0,0,1.24-1.24V21.49"/>
+  <line class="cls-2" x1="19.71" y1="17.1" x2="23.47" y2="20.86"/>
+  <circle class="cls-3" cx="16.73" cy="14.1" r="4.23"/>
+  <line class="cls-4" x1="4.47" y1="5.57" x2="13.8" y2="5.57"/>
+  <line class="cls-4" x1="4.47" y1="8.66" x2="11.88" y2="8.66"/>
+  <line class="cls-4" x1="4.47" y1="11.74" x2="9.83" y2="11.74"/>
+  <line class="cls-4" x1="4.47" y1="14.82" x2="9.41" y2="14.82"/>
+</svg>

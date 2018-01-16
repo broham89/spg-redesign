@@ -1,0 +1,139 @@
+#blog {
+	height: auto;
+	padding: 5rem 0 10rem ;
+
+	.wrapper > .container {
+		margin: 0;
+		max-width: 100%;
+	    margin: 100px 0;
+	}
+	
+	ul {
+	    width: 100%;
+	    height: 100%;
+	    padding: 7rem 0;
+
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	h4 {
+		margin-bottom: 20px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	button.slick-prev, .slick-next {
+		background-color: $pri-black;
+		border-radius: 6px;
+		width: 40px;
+		height: 50px;
+	    z-index: 20;
+	} 
+
+	.slick-track {
+		height: 100%;
+	}
+	
+	.slick-list{
+	    padding: 20px;
+	}
+
+	.card {
+		height: 100%;
+		@include transition(all 0.2s ease-out);
+
+			&:hover {
+	    		@include dropshadow;
+	    	}
+
+	}
+
+	.slick-prev:before, .slick-next:before {
+		font-size: 50px;
+		line-height: 0.3;
+	}
+
+	.responsive {
+		min-width: 0;
+		min-height: 0;
+		display: flex;
+	}
+
+	.card > a {
+		display: block;
+		height: 100%;
+	}
+
+	.card .text-container {
+		padding: 30px;
+
+	}
+
+	.see-all a{
+		text-align: center;
+		
+		img {
+			width: 100px;
+			margin: 0 auto;
+		}
+	}
+
+	.blog-img {
+		background: url(../img/blog/blog-1.png)no-repeat	center center;
+		background-size: cover;
+		width: 100%;
+		height: 200px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+
+	}
+
+
+	li {
+		width: 100%;
+		height: auto;
+		border: none;
+
+	    a {
+	    	display: block;
+	    	height: 100%;
+	    	background-color: white;
+	    	padding: 3.7rem;
+	    	border: 1px solid $border-gray;
+	    	border-top: 3px solid $pri-black;
+	    	border-radius: 6px;
+
+	    }
+
+	    &:last-child {
+	    	margin-right: 0;
+	    	width: 10%;
+	    }
+	}
+
+	.underline{
+		text-decoration: underline;
+	}
+
+	.flexbox {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: hidden;
+	}
+
+	@include breakpoint (phone) {
+		h4 {
+			font-size: 1.1rem;
+		}
+
+		.text-container p{
+			font-size: 14px;
+		}
+	}
+
+
+}

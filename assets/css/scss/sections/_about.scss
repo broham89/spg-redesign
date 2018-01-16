@@ -1,0 +1,162 @@
+#about {
+	height: auto;
+	padding: 50px 0;
+
+	> svg {
+	    position: absolute;
+	    width: 500px;
+	    z-index: -2;
+	    opacity: 0.7;
+	    left: -200px;
+	}
+
+	.wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;
+		height: 100%;
+
+	}
+
+	.divider {
+		@include horz-gradient (#6acafc , #7ff7f4);
+		height: 5px;
+		width: 40px;
+		margin-bottom: 25px;
+		border-radius: 12px;
+	}
+
+	li {
+		display: inline-block;
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	h2 {
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		margin-bottom: 15px;
+		text-transform: initial;
+	}
+
+	.about-content {
+		width: 100%;
+		height: fit-content;
+	    padding-bottom: 10%;
+	    display: flex;
+		align-items: center;
+	}
+
+	.shape {
+		width: 1000px;
+		height: 1000px;
+		border-radius: 50px;
+		position: absolute;
+		background: #6acafc;
+		background: -moz-linear-gradient(top, #6acafc 1%, #7ff7f4 100%);
+		background: -webkit-linear-gradient(top, #6acafc 1%, #7ff7f4 100%);
+		background: linear-gradient(to bottom, #6acafc 1%, #7ff7f4 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=0 );
+		z-index: -10;
+		opacity: 0.8;
+		transform: rotate(50deg) skewY(-13.9deg) translate(-50%, -50%);
+		left: 54%;
+	    top: 74%;
+	}
+
+	.left, .right {
+		flex-grow: 1;
+		width: 50%;
+		display: inline-block;
+	}
+
+	.left {
+		float: left;
+		padding: 0 3% 0 5%;
+
+	}
+
+	.right {
+	    float: right;
+	    position: relative;
+
+	    .about-ilus > img {
+			width: 450px;
+			display: block;
+			margin: 0 auto;
+
+	    }
+	}
+
+	@include breakpoint (tablet) {
+		padding-top: 50px;
+
+		.shape {
+			width: 500px;
+			height: 500px;
+			top: 65%;
+		}
+
+		.left {
+			padding-right: 0;
+		}
+
+		p {
+			font-size: 15px;
+		}
+
+
+		.about-content {
+		    padding: 75px 0 100px;
+		}
+
+
+		.right .about-ilus > img{
+			width: 350px;
+		}
+
+		.right {
+			right: -30px;
+		}
+	}
+
+	@include breakpoint (phone) {
+		padding: 150px 0 70px;
+		text-align: center;
+
+		> svg {
+			top: 100px;
+			left: -100px;
+			width: 400px;
+			opacity: 1;
+		}
+
+		.about-content {
+		    padding: 35px 0 0 ;
+		}
+
+		.divider {
+			margin: 0 auto;
+		}
+
+		.right {
+			display: none;
+		}
+
+		.left {
+			padding-right: 3%;
+		}
+		p {
+			font-size: 0.85rem;
+			line-height: 1.5rem;
+		}
+	}
+
+}

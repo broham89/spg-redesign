@@ -1,0 +1,98 @@
+#projects {
+	// background: url(../img/texture.svg) no-repeat center bottom;
+    background-size: 1900px;
+
+	.wrapper {
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		align-content: center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.project-lists {
+		display: flex;
+	    max-width: 1200px;
+	    width: 70%;
+	    position: relative;
+
+	    .logo > svg {
+	    	height: 80px;
+	    }
+
+	    li {
+	    	width: 100%;
+	    	display: flex;
+	    	flex-direction: column;
+	    	box-sizing: border-box;
+	    	@include transition(all 0.2s ease-out);
+
+	    	&.hover:hover {
+				border: 1px solid $border-gray;
+				background-color: white;
+				border-radius: 6px;
+				@include dropshadow;
+			}
+
+	    	a.link {
+	    		display: block;
+	    		height: 100%;
+				padding: 70px 30px;
+
+	    	}
+
+	    	svg {
+	    		height: 60px;
+	    	}
+
+	    }
+
+	    .disable {
+	    	background-color: #f7f7f7;
+
+	    }
+
+	    .tag {
+	    	font-weight: 600;
+	    	
+	    }
+
+	}
+
+	span.more-to-come {
+    	margin-top: 50px;
+		font-weight: 600;
+		color: $border-gray;
+    }
+
+	@include breakpoint (tablet) {
+		padding: 100px 0 50px;
+
+		.project-lists {
+			width: 100%;
+
+			.logo svg {
+		    	height: 50px;
+			}
+		}
+
+
+		p {
+			font-size: 14px;
+		}
+
+
+	}
+
+	@include breakpoint (phone) {
+		.project-lists {
+			flex-direction: column;
+
+		}
+
+		p {font-size: 13px;}
+	}
+
+
+}

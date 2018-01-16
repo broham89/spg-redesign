@@ -1,0 +1,10 @@
+// Breakpoints of Viewport Screen sizes
+
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (max-width: 900px) {@content;}
+	}
+	@if $point == phone {
+		@media (max-width: 600px) {@content;}
+	}
+}

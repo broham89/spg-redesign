@@ -1,0 +1,21 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.social-github-with-circle {
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+}
+.social-twitter-with-circle {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -30px;
+}
+.social-facebook-with-circle {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -60px;
+}
+

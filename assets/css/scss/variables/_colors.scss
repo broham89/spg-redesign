@@ -1,0 +1,26 @@
+// COLORS
+
+$bg-color: #fafafa; // --> background color on <body>
+$pri-black: #4e4e4e; 
+$border-gray: #d1d8db;
+$accent-blu: #7ff7f4;
+
+
+
+// GRADIENT COLORS ~~~~~~~~~~~~~~~
+
+@mixin gradient-1($color-1, $color-2) {
+	background: $color-1; /* Old browsers */
+	background: -moz-linear-gradient(top, $color-1 1%, $color-2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color-1 1%,$color-2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color-1 1%,$color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin horz-gradient ($color-left, $color-right) {
+	background: $color-left; /* Old browsers */
+	background: -moz-linear-gradient(left, $color-left 0%, $color-right 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, $color-left 0%,$color-right 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, $color-left 0%,$color-right 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-left', endColorstr='$color-right',GradientType=1 ); /* IE6-9 */
+}
