@@ -7,15 +7,8 @@
 		"uuidString": "A646B7AF-6348-43F9-A559-6E5F572B71D1"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
-	"\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.gitignore",
-		"oF": 0
-		},
 	"\/assets\/css\/scss\/layouts\/_base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -232,8 +225,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/scss\/style.css",
-		"oF": 0,
+		"oAP": "\/assets\/css\/style.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
@@ -364,7 +357,7 @@
 		},
 	"\/assets\/img\/blog\/blog-1.png": {
 		"ft": 32768,
-		"iS": 94813,
+		"iS": 92296,
 		"oA": 0,
 		"oAP": "\/assets\/img\/blog\/blog-1.png",
 		"oF": 0,
@@ -375,7 +368,7 @@
 		},
 	"\/assets\/img\/blog\/blog-2.png": {
 		"ft": 32768,
-		"iS": 94207,
+		"iS": 64444,
 		"oA": 0,
 		"oAP": "\/assets\/img\/blog\/blog-2.png",
 		"oF": 0,
@@ -687,6 +680,24 @@
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [
@@ -695,7 +706,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 536215185,
-	"displayValue": "spg",
+	"displayValue": "spg-redesign",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-jake"
 	},
@@ -1268,6 +1279,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
