@@ -387,6 +387,35 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/favicon\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 494,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/favicon\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 735,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/favicon\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon\/favicon.ico",
+		"oF": 0
+		},
 	"\/assets\/img\/icons\/icomoon_3_icons\/demo-external-svg.html": {
 		"cB": 0,
 		"ft": 8192,

@@ -1,5 +1,9 @@
 // basic personal overide css styles and classes
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;

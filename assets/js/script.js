@@ -58,12 +58,14 @@
 
 	});
 
-	$('.responsive').slick({
+	$('.variable-width').slick({
 	  dots: false,
 	  infinite: false,
 	  speed: 300,
-	  slidesToShow: 3,
 	  slidesToScroll: 1,
+	  slidesToShow: 1,
+	  centerMode: false,
+	  variableWidth: true,
 	  responsive: [
 	    {
 	      breakpoint: 900,
