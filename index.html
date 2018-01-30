@@ -145,42 +145,21 @@
 
 				<div class="container">
 					<div class="responsive">
-						<div class="card">
-							
-							<a target="_blank"  href="">
-								<div class="blog-img"></div>
-								<div class="text-container">
-									<h4>Using Rasa NLU with Docker</h4>
-									<p>The easiest way to get started working with Rasa</p>
-								</div>
-							</a>
-						</div>
-						<div class="card">
-							
-							<a target="_blank"  href="">
-								<div class="blog-img"></div>
-								<div class="text-container">
-									<h4>Onboarding a Chatbot Developer</h4>
-									<p>How we prepare developers for building chatbots</p>
-								</div>
-							</a>
-
-						</div>
-						<div class="card">
-							
-							<a target="_blank"  href="">
-								<div class="blog-img"></div>
-								<div class="text-container">
-									<h4>Build a Chatbot with Rasa NLU — Part Three</h4>
-									<p>Part 3 — A Complete Chatbot on Slack and Twilio</p>
-								</div>
-							</a>
+						<div id="cardTemplate">
+							<div class="card">
+								<a target="_blank"  href="">
+									<div class="blog-img" style="background-image: url({{IMAGE}})"></div>
+									<div class="text-container">
+										<h4>{{TITLE}}</h4>
+										<p>{{DESCRIPTION}}</p>
+									</div>
+								</a>
+							</div>
 						</div>
 						<div class="card see-all">
 							<a target="_blank" class="underline" href="https://blog.spg.ai">See More
 							<img src="assets/img/medium-logo.png" alt="">
 							</a>
-
 						</div>
 					</div>
 					

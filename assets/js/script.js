@@ -58,39 +58,64 @@
 
 	});
 
-	$('.responsive').slick({
-	  dots: false,
-	  infinite: false,
-	  speed: 300,
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  responsive: [
-	    {
-	      breakpoint: 900,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2,
-	        infinite: false,
-	        dots: false
-	      }
-	    },
-	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
-	  ]
-	});
+	$(document).ready( function() {
+		const cardTemplate = $('#cardTemplate').html();
+		const cardContainer = $('#cardTemplate').parent();
+		console.log(cardContainer)
+		$('#cardTemplate').remove();
+	
+		const seeAll = cardContainer.html();
+		cardContainer.children().remove();
+		
+		$.ajax({
+			method: 'GET',
+			url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.spg.ai%2Ffeed',
+		}).done(function( data ) {
+			var posts = data.items
+	
+			for (var i=0; i<posts.length; i++) {
+				var card = cardTemplate.replace('{{TITLE}}', posts[i].title)
+				card = card.replace('{{IMAGE}}', posts[i].thumbnail)
+	
+				cardContainer.append(card)
+			}
+
+			$('.responsive').slick({
+				dots: false,
+				infinite: false,
+				speed: 300,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 900,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							infinite: false,
+							dots: false
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				]
+			});
+			console.log(data)
+		});
+	})
 
