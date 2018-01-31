@@ -62,7 +62,7 @@
 	  dots: false,
 	  infinite: false,
 	  speed: 300,
-	  slidesToScroll: 1,
+	  slidesToScroll: 2,
 	  slidesToShow: 1,
 	  centerMode: false,
 	  variableWidth: true,
@@ -71,7 +71,7 @@
 	      breakpoint: 900,
 	      settings: {
 	        slidesToShow: 2,
-	        slidesToScroll: 2,
+	        slidesToScroll: 1,
 	        infinite: false,
 	        dots: false
 	      }
@@ -80,14 +80,8 @@
 	      breakpoint: 600,
 	      settings: {
 	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
+	        slidesToScroll: 1,
+	        centerMode: true
 	      }
 	    }
 	    // You can unslick at a given breakpoint now by adding:

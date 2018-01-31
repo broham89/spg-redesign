@@ -989,6 +989,8 @@ header {
 #blog {
   height: auto;
   padding: 5rem 0 10rem; }
+  #blog .wrapper {
+    max-width: 1100px; }
   #blog .wrapper > .container {
     margin: 0;
     max-width: 100%;
